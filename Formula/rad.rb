@@ -23,6 +23,14 @@ class Rad < Formula
   
       (bin/".installed-by.txt").write "brew"
     end
+
+    def caveats
+      caveat = <<~EOS
+        This is an unofficial tap for the Radius CLI and not an official part of the Radius project. 
+      
+      EOS
+      caveat
+    end
   
     test do
       version_output = shell_output "#{bin}/rad version"
