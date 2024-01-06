@@ -12,7 +12,7 @@ class Rad < Formula
   
     version "0.29.0"
     
-    license "MIT"
+    license "Apache 2.0"
   
     def install
       if Hardware::CPU.intel?
@@ -24,15 +24,12 @@ class Rad < Formula
       (bin/".installed-by.txt").write "brew"
     end
 
-    def post_install
-      # Execute the command "rad bicep download" as post install step 
-      system "sudo rad bicep download"
-    end  
-
     def caveats
       caveat = <<~EOS
         This is an unofficial tap for the Radius CLI and not an official part of the Radius project. 
       
+        Execute the following command to complete the installation of the Radius CLI:
+        rad bicep download
       EOS
       caveat
     end
