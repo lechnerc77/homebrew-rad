@@ -24,6 +24,10 @@ class Rad < Formula
       (bin/".installed-by.txt").write "brew"
     end
 
+    def post_install
+      system "#{bin}/rad bicep download"
+    end  
+    
     def caveats
       caveat = <<~EOS
         This is an unofficial tap for the Radius CLI and not an official part of the Radius project. 
