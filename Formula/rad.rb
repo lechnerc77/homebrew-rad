@@ -25,7 +25,7 @@ class Rad < Formula
     end
 
     def post_install
-      "#{bin}/rad bicep download"
+      run "#{bin}/rad bicep download"
     end  
 
     def caveats
