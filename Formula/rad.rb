@@ -7,7 +7,7 @@ class Rad < Formula
       sha256 "3180398e23e52898c5c35b2a29fea8be33a6956a79a757d7f5b90c586903d75d"
     elsif Hardware::CPU.arm?
       url "https://github.com/radius-project/radius/releases/download/v0.32.0/rad_darwin_arm64"
-      sha256 "5971c70bf2309bf5efce365362f020428598edf036bba3da0aa6580a72b0436de"
+      sha256 "971c70bf2309bf5efce365362f020428598edf036bba3da0aa6580a72b0436de"
     end
   
     version "0.32.0"
