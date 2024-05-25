@@ -10,7 +10,7 @@ class Rad < Formula
       sha256 "7e6c37ea6ba5423dfcd32f91b5ef4b172592959a923dfb95f765d10d910752e8"
     end
   
-    version "0.33.0"
+    version "0.34.0"
     
     license "Apache 2.0"
   
