@@ -3,14 +3,14 @@ class Rad < Formula
     homepage "https://github.com/radius-project/radius"
     
     if Hardware::CPU.intel?
-      url "https://github.com/radius-project/radius/releases/download/v0.42.0/rad_darwin_amd64"
-      sha256 "54099358b3426dad8ca53b11ec631606d63957cfbe7391774fc62a0c9afb459a"
+      url "https://github.com/radius-project/radius/releases/download/v0.43.0/rad_darwin_amd64"
+      sha256 "61b5ed3b10b30b8997b5849af24a5616646209cf8d152dd6b663c3dbfed8f25a"
     elsif Hardware::CPU.arm?
-      url "https://github.com/radius-project/radius/releases/download/v0.42.0/rad_darwin_arm64"
-      sha256 "dc2ff9065df8d4e641a6ac314daf35143cab6d80f4276a5578d45a479f65735a"
+      url "https://github.com/radius-project/radius/releases/download/v0.43.0/rad_darwin_arm64"
+      sha256 "b3b72e37a136aa1a7903bb6b9c0f9f8eb4a2a1d0efdc068f3fa6c0440f02a607"
     end
   
-    version "0.42.0"
+    version "0.43.0"
     
     license "Apache 2.0"
   
